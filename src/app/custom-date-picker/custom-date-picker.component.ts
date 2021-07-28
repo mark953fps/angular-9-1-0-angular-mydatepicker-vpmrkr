@@ -3,11 +3,11 @@ import { IAngularMyDpOptions } from 'angular-mydatepicker';
 import moment from 'moment';
 
 @Component({
-  selector: 'app-child',
-  templateUrl: './child.component.html',
-  styleUrls: ['./child.component.css']
+  selector: 'app-custom-date-picker',
+  templateUrl: './custom-date-picker.component.html',
+  styleUrls: ['./custom-date-picker.component.css']
 })
-export class ChildComponent implements OnInit {
+export class CustomDatePickerComponent implements OnInit {
   myDatePickerOptions: IAngularMyDpOptions = {
     disableSince: {
       year: moment().format('YYYY'),
