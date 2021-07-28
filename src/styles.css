@@ -1,1 +1,6 @@
 /* Add application styles & imports to this file! */
+
+.myDpDisabled {
+  background: #80808042 !important;
+  outline: none !important;
+}
