@@ -1,6 +1,14 @@
 <div class="input-box-container">
-  <input class="input-box" placeholder="Click to select a date"
-    angular-mydatepicker name="mydate" (click)="dp.toggleCalendar()"
-    [(ngModel)]="model" [options]="myDatePickerOptions"
-    #dp="angular-mydatepicker"/>
+  <div class="con-flex">
+    <div class="con-label">
+      <input class="input-box" placeholder="Click to select a date"
+      angular-mydatepicker name="mydate" (click)="isEnabledClicking ? dp.toggleCalendar() : ''"
+      [(ngModel)]="model" [options]="myDatePickerOptions"
+      #dp="angular-mydatepicker"/>
+    </div>
+
+    <div class="con-label">
+      <button type="button" (click)="dp.toggleCalendar()">open</button>
+    </div>
+  </div>
 </div>

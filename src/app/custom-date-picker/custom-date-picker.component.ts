@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { IAngularMyDpOptions } from 'angular-mydatepicker';
 import moment from 'moment';
 
@@ -8,6 +8,8 @@ import moment from 'moment';
   styleUrls: ['./custom-date-picker.component.css']
 })
 export class CustomDatePickerComponent implements OnInit {
+  @Input() public isEnabledClicking: boolean = false;
+
   model = {
     isRange: false,
     singleDate: {
